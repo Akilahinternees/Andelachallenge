@@ -1,0 +1,192 @@
+
+#header{background-color:#f9f9f9;height:80px;margin-top:-5px;width:100%}
+#menu{float:right;position:relative;top:20px;right:0%}
+#search{background-color:white;height:127px;margin-top:-41px;position:sticky;top:0px;z-index:1;}
+#loginemail{background-color:#E9E6E6;border:none;text-align:center;border-radius: 18px;}
+#loginpassword{background-color:#E9E6E6;border:none;text-align:center;border-radius: 18px;}
+#location{background-color:#333e62;color:white;border:none}
+#location:hover{color:#DAA520;border:none}
+
+body{background-color:#f9f9f9}
+.inside{font-size:18px;font-family:tahoma;color:black;text-decoration:none;text-transform:uppercase;margin-top:20dpx;margin:5px;}
+.inside:hover{color:chocolate;}
+.imag{margin-top:-10px;height:100px;}
+
+.dropdown {float: left;overflow: hidden;}
+.dropbtn{margin:5px;}
+.dropdown .dropbtn {font-size: 18px;  color: black;text-decoration:none;text-transform:uppercase;font-family:tahoma;}
+.dropdown:hover .dropbtn {color: chocolate;}
+
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+.dropdown-content a {float: none;color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.logine{width:80%;text-transform:uppercase;font-family: Poppins-Regular;font-size: 13px;line-height: 2.7;color:grey;background-color:#E9E6E6;border:none;text-align:center;border-radius: 18px;}
+
+.forget{text-decoration:none;color:#3DC661;text}
+.input-icons i { position: absolute; } 
+        
+.input-icons { width: 100%; margin-bottom: 10px; } 
+          
+.icon { padding: 10px; } 
+
+.hide{float:right;overflow:hidden;}
+.doit{font-size:18px;font-family:tahoma;text-transform:uppercase;color:black;margin:5px;text-decoration:none;}
+.hide:hover .doit {color: chocolate;}
+.show {display: none;position: fixed;right:8px;background-color:#f9f9f9;border-radius:3%;width:20%}
+.hide .show{display:none;}
+.login100-form-btn {
+	font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 80%;
+	border-radius: 18px;
+	background: #57b846;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;
+
+}
+
+.login100-form-btn:hover {background: #333333;}
+button:hover{cursor:pointer;background-color: #333333}
+.body{text-align:center;padding-top:100px;font-size:25px;color:white;font-family:Verdana;}
+.searc{font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.9;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	background: #57b846;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;
+	margin-top:100px;
+	
+	}
+.searc:hover {background: #333333;}
+.search{border:none;background-color:#E9E6E6;font-size: 13px;line-height: 2.7;width:40%;margin-right:-6px}
+
+.slides{display:none}
+
+
+
+.fa-facebook {
+  background: #333e62;
+  color: white;
+  padding: 5px;
+  border: 3px solid white;
+  color: white;
+  
+  border-radius:50%;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+.fa-facebook:hover{border: 3px solid #DAA520;color:#DAA520}
+.fa-instagram{
+	background: #333e62;
+  color: white;
+  border: 3px solid white;
+  padding: 5px;
+  color: white;
+  
+  border-radius:50%;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+	
+}
+.fa-instagram:hover{border: 3px solid #DAA520;color:#DAA520}
+.fa-google{
+background: #333e62;
+  color: white;
+  padding: 5px;
+  border: 3px solid white;
+  color: white;
+  
+  border-radius:50%;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+	
+}
+.fa-google:hover{border: 3px solid #DAA520;color:#DAA520}
+
+
+.create{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:45%;text-align:center}
+.transfere{border:none;background-color:#E9E6E6;border-radius:5px;font-size: 15px;line-height: 2.7;width:45%;text-align:center}
+.transferer{border:none;border-bottom:3px;font-size: 15px;line-height: 2.7;width:45%;text-align:left;color:black}
+.create1{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:90%;text-align:center}
+.create4{border:none;background-color:#E9E6E6;border-radius:5px;font-size: 15px;line-height: 2.7;width:90%;text-align:left}
+.create2{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:100%;text-align:center}
+.signupbtn{font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 90%;
+	border-radius: 18px;
+	background: #57b846;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;}
+.signupbtn:hover {background: #333333;cursor:pointer}
+.signupbtn1{font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100%;
+	border-radius: 18px;
+	background: #57b846;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;}
+.signupbtn1:hover {background: #333333;cursor:pointer}
+.signupbtne{font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 90%;
+	border-radius: 5px;
+	background: #57b846;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;}
+.signupbtne:hover {background: #333333;cursor:pointer}
+.btncreate4{border:none;background-color:#57b846;border-radius:5px;font-size: 15px;line-height: 2.7;width:90%;text-align:center}
+.btncreate4:hover{background: #333333;cursor:pointer}
+.l1{margin-left:-530px;}
+
+#user-account{width:80%;border-style: groove;background-color:white}
+.form1{margin-left:0px;margin-bottom:110px;}
+.form2{margin-left:50px}
+.form3{margin-left:px}
+.heading3{margin-left:-280px;color:skyblue;font-size:15px;}
+
+#user-page{width:100%;background-color:white;margin-top:-54px;}
+.heading{background-color:#57b846;color:white;}
+.comment{border:none;background-color:#E9E6E6;border-radius:5px;font-size: 15px;line-height: 2.7;color:white}
+
+
+
+
+
+

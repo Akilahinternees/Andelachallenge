@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+	<style>
+	body{
+  background-color:  #F2EFF0;
+}
+.entr{
+    margin-left: 200px;
+    margin-top: -550px;
+	background-color:white;
+	border-radius:5px;
+}
+.text{width:50%;}
+.profile{
+    margin-top: 0px;
+	background-color:#2D394C;
+	width:25%;
+	height:580px;
+	
+  
+}
+.dash{
+  
+	border-bottom:solid grey;
+	border-top:solid grey;
+  
+}
+.dash:hover{
+	color:tan;
+    background-color:grey; 
+}
+.dash a{
+   color:white;
+   text-decoration:none;
+  
+}
+.dash a:hover{
+   color:tan;
+}
+#header{background-color:#142034;height:80px;margin-top:-5px;width:100%}
+#menu{float:right;position:relative;top:20px;right:0%}
+.inside{font-size:18px;font-family:tahoma;color:#A1A2A5;text-decoration:none;text-transform:uppercase;margin-top:20dpx;margin:5px;}
+.inside:hover{color:chocolate;}
+.imag{margin-top:-10px;height:100px;}
+#title{width:92%;padding:20px;}
+#article{width:95%;height:300px;}
+.title{font-family:tahoma;color:grey;text-align:center}
+
+
+
+
+.save{
+
+	font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100px;
+	border-radius: 5px;
+	background: #039FF9;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.save:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+}
+.cance{
+    background-color:#F71A6E;
+	font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100px;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+  
+}
+.cance:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+}
+
+.share{
+    background-color:#57b846;
+	font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100px;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+  
+}
+.share:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+}
+
+
+	</style>
+</head>
+<body>
+        <div id="header">
+<img  class="imag" src="../assets/team.png">
+	<div id="menu">
+
+			<a class="inside" href="index.html"><span class="fa fa-home"></span> Home </a>
+	</div>
+</div>
+			<div class="text dashboard">
+                <div class="profile">
+                    <div class="dash">
+                    <a href="profile.html"><p>PROFILE</p></a></div>
+
+                    <div class="dash">
+                            
+                            <a href="Dashboard.html"><p>DASHBOARD</p></a>      
+                    </div>
+
+                    <div class="dash">
+                            
+                            <a href="articles.html"><p>VIEW ARTICLES</p></a>       
+                    </div>
+
+                    <div class="dash">
+                            
+                            <a href="userpage.html"><p>ADD ARTICLES</p></a>      
+                    </div>
+
+                    <div class="dash">
+                            
+                            <a href="index.html"><p>LOGOUT</p></a>      
+                    </div>
+
+               
+                
+                </div>  
+            
+        
+        </div>
+    <div class="entr">
+    <h2 class="title">ADD ARTICLE</h2>
+    <form action="userpage.html" method="post" id="addarticle">
+        <input type="text"  placeholder="Add Title" id="title" required><br><br>
+		<textarea cols="0" rows="3" placeholder="Write your article" id="article" required>
+		Write your article
+		</textarea><br><br>
+              <center><div id="button">
+      <button class="save" type="button">Save</button>
+	  <button class="share" type="button">Share</button>
+        <button  class="cance" type="button"onclick="resetForm('addarticle'); return false;">Cancel</button>
+     <div></center>
+
+        </form>   
+
+    </div>
+       <script type="text/javascript">
+   function resetForm(addarticle)
+   {
+       var myForm = document.getElementById(addarticle);
+
+       for (var i = 0; i < myForm.elements.length; i++)
+       {
+           if ('submit' != myForm.elements[i].type && 'reset' != myForm.elements[i].type)
+           {
+               myForm.elements[i].checked = false;
+               myForm.elements[i].value = '';
+               myForm.elements[i].selectedIndex = 0;
+           }
+       }
+   }
+</script>
+                
+</body>
+</html>

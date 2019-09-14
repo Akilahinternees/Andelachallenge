@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<div id="header">
+<img  class="imag" src="../assets/team.png">
+	<div id="menu">
+
+		<!--<div class="dropdown">
+		<a class="dropbtn" href="#us">Ownership <i class="fa fa-caret-down"></i>  </a>
+		<div class="dropdown-content">
+			  <a href="#">Vehicle ownership</a>
+			  <a href="#">Land ownership</a>
+		</div></div>-->
+		
+		
+
+		<div class="hide">
+			<a class="doit" href="#" onclick="document.getElementById('id02').style.display='block'"><span class="fa fa-user"></span> Login <i class="fa fa-caret-down"></i></a>
+			<div id="id02" class="modal">
+  
+				  <div style="width:50%;" class="modal-content animate">
+					<div class="imgcontainer">
+					  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span><br>
+						
+						<center>
+				<form action="" method="post">
+				<i class="fa fa-user icon" style="color:#57b846;height: 30px;margin-top:30px;"><b style="color:black;font-family:Poppins-Bold;text-transform:uppercase;"> &nbsp Employee Login</b></i>
+				<div class="input-icons">
+				<i class="fa fa-user icon" ></i>
+				<input class="logine" placeholder="Username" type="text" name="username" required><br><br>
+				<i class="fa fa-key icon"></i>
+				<input class="logine" placeholder="Password" type="password" name="password" required><br><br>
+				</div>
+				<a href="userpage.html"> <button class="login100-form-btn">Login</button></a>
+				<p id="one">Forgot <a href="#contact" class="forget"><b>Username</b></a> / <a href="#" class="forget"><b>Password?</b></a></p>
+				<p id="two"><a class="forget" href="create_account.html" id="signup"><b>Create acount &rarr;</b></a></p>
+				</form>
+				</center>
+											
+
+				</div>
+				</div>
+</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</div>
+</div>
+<div style="height:570px;background-image:url(../assets/teamwork.jpg);background-repeat:no-repeat;width:100%;background-size:cover;margin-top:-20px">
+<h2 class="body">Coming together is the beginning. Staying together is progress<br><small> Working together is success.</small> <h2><br>
+<center>
+					<form class="example" method="post" action="">
+					  <a href="create_account.html"><button class="searc" type="submit" name="submit">Get Started  <i class="fa fa-long-arrow-right"> </i></button></a>
+					</form>
+					
+
+					
+</center>
+</div>
+
+
+<script>
+var index=0;
+slides();
+
+function slides(){
+var s = document.getElementsByClassName("slides");
+for(i=0;i<s.length;i++){
+s[i].style.display = "none";}
+
+if(index<s.length)
+s[index].style.display="block";
+
+index++;
+if(index>=s.length)
+index=0;
+
+setTimeout(slides, 2500);
+
+}
+
+</script>
+</body>
+</html>
