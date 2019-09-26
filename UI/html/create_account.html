@@ -29,6 +29,7 @@ $(document).ready(function () {
 </head>
 
 <body>
+<div id="main">
 <div id="header">
 <img  class="imag" src="../assets/team.png">
 	<div id="menu">
@@ -36,47 +37,38 @@ $(document).ready(function () {
 			<a class="inside" href="Index.html"><span class="fa fa-home"></span> Home </a>
 	</div>
 </div>
-<br><br><br>
+
 <center>
 <div id="user-account">
-<table style="background-color:white;width:100%">
-<th style="color:skyblue ;font-size:20px;">Already have account<br><small>Login here</small></th>
-<th style="color:skyblue ;font-size:20px;">New Account?<br><small>Create here</small><br><br></th><br><br>
-<tr><td class="first" style="border-right:2px solid grey;height:200px;width:45%;">
-
-
-<form class="form1" action="userpage.html">
-	<div class="input-icons">
-	  </i><input class="create2" type="text" placeholder="Username" name="username" 	required><br><br>
-      <i class="fa fa-lock icon" ></i><input class="create2" type="password" placeholder="Enter Password" name="password" required>
-	  </div><br>
-        <input type="submit" class="signupbtn1" name="submitO" value="Login">
-		
-		
-  </form>
-
-
+<table id="table">
+<th class="th">Already have account<br><small>Login here</small></th>
+<th class="th">New Account?<br><small>Create here</small><br><br></th><br><br>
+<tr>
+<td class="firste">
+	<form class="form1" action="userpage.html">
+		<div class="input-icons">
+		  </i><input class="create2" type="text" placeholder="Username" name="username" 	required><br><br>
+		  <i class="fa fa-lock icon" ></i><input class="create2" type="password" placeholder="Enter Password" name="password" required>
+		  </div><br>
+			<input type="submit" class="signupbtn1" name="submitO" value="Login">	
+	</form>
 </td>
 <td class="first">
-<form class="form2" method="post" action="">
-	<div class="input-icons">
-	<i class="fa fa-user icon"></i>
-      <input class="create" type="text" placeholder="First Name" name="Firstname" required> <input class="create" type="text" placeholder="Lastname" name="Lastname" required><br><br>
-	  <i class="fa fa-number icon" ></i><input class="create1" type="text" placeholder="Username" name="username" required><br><br>
-	  <i class="fa fa-envelope icon" ></i><input  class="create1" type="email" placeholder="Email" name="email"><br><br>
-      <i class="fa fa-lock icon" ></i><input id="txtNewPassword" class="create" type="password" placeholder="Enter Password" name="pwd" required>
-	  <input id="txtConfirmPassword" class="create" type="password" placeholder="Repeat Password" name="pwd-repeat"  onChange="checkPasswordMatch()" required>
-	  </div><br>
-	  <div class="registrationFormAlert" id="divCheckPasswordMatch" style="text-align:center">
-</div>
-	  
-        <input type="submit" name="submit" value="Sign up" class="signupbtn">
-		
-  </form>
-  
-  
-</td></tr>
+	<form class="form2" method="post" action="">
+		<div class="input-icons">
+		<i class="fa fa-user icon"></i>
+		  <input class="create" type="text" placeholder="First Name" name="Firstname" required> <input class="create" type="text" placeholder="Lastname" name="Lastname" required><br><br>
+		  <i class="fa fa-number icon" ></i><input class="create1" type="text" placeholder="Username" name="username" required><br><br>
+		  <i class="fa fa-envelope icon" ></i><input  class="create1" type="email" placeholder="Email" name="email"><br><br>
+		  <i class="fa fa-lock icon" ></i><input id="txtNewPassword" class="create" type="password" placeholder="Enter Password" name="pwd" required>
+		  <input id="txtConfirmPassword" class="create" type="password" placeholder="Repeat Password" name="pwd-repeat"  onChange="checkPasswordMatch()" required>
+		  </div><br>
+		  <div class="registrationFormAlert" id="divCheckPasswordMatch" style="text-align:center"></div>
+		   <input type="submit" name="submit" value="Sign up" class="signupbtn">	
+	 </form>
+</td>
+</tr>
 </table></br></br>
-</div></center>
+</div></center></div>
 </body>
 </html>
