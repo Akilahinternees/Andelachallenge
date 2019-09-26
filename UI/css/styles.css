@@ -6,7 +6,7 @@
 #title1{font-size:50px;color:#3C7792;font-family:tahoma}
 #content1{font-size:20px;color:grey;font-family:times new roman}
 #table{background-color:white;width:100%}
-body{background-image:url(../assets/back1.png);background-repeat:no-repeat;background-size:cover;padding:60px;}
+body{background-color:#6E9095;padding:60px;}
 
 .inside{font-size:15px;font-family:tahoma;color:#3C7792;text-decoration:none;margin-top:20px;margin:5px;}
 .inside:hover{color:chocolate;border-bottom:solid 1px #3C7792}
