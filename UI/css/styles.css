@@ -1,7 +1,7 @@
 
 #header{margin-top:-5px;width:100%}
 #menu{float:right;position:relative;top:20px;right:50px;}
-#main{width:100%;background-color:white;}
+#main{width:100%;background-color:white;height:530px}
 #mainbody{width:80%;align-items:center;padding-left:50px;}
 #title1{font-size:50px;color:#3C7792;font-family:tahoma}
 #content1{font-size:20px;color:grey;font-family:times new roman}
@@ -29,8 +29,8 @@ body{background-color:#6E9095;padding:60px;}
 	}
 .start:hover {background: white;border:2px solid #3C7792;color:#3C7792;}
 .body{width:60%;}
-.image{width:150%;height:450px;}
-.body2{width:40%;margin-left:510px;margin-top:-380px;}
+.image{width:150%;height:480px;}
+.body2{width:40%;margin-left:510px;margin-top:-445px;}
 .user{color:#57b846;font-family:tahoma;text-transform:uppercase;}
 .logine{ background-color:#E9E6E6;border:none;border-radius: 18px;width:36%;
 font-family: Montserrat-Bold;
