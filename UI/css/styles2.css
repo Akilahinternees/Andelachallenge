@@ -31,7 +31,9 @@ border:solid 1px #6E9095;
 }
 .titletext{
 width:90%;
-border:solid 1px #6E9095;
+font-size:20px;
+font-weight:bold;
+
 }
 
 .text{width:50%;}
