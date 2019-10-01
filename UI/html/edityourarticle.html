@@ -49,24 +49,37 @@
             
         
         </div>
-    <div class="entr">
-    <h2 class="title">ADD ARTICLE</h2>
-    <form action="userpage.html" method="post" id="addarticle">
-        <input type="text"  placeholder="Add Title" id="title3" required><br><br>
-		<textarea cols="0" rows="3" placeholder="Write your article" id="article" required>
-		Write your article
-		</textarea><br><br>
-              <center><div id="button">
-	  <button class="share" type="button">Save</button>
-        <button  class="cance" type="button"onclick="resetForm('addarticle'); return false;">Cancel</button>
-     </div></center>
+    <div class="entre">
+    <h2 class="title">Edit you article</h2>
+	<form action="" method="post" id="actions_frm">
+	<input type="Text" class="titletext" placeholder="This Blod post will make you more money guaranted">
+	<br><br>
+<textarea class="textareas"  placeholder="API is the acronym for Application Programming Interface, which is a software intermediary that allows 
+two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+To explain this better, let us take a familiar example.
 
-        </form>   
+Imagine you’re sitting at a table in a restaurant with a menu of choices to order from. The kitchen is the part of the “system” that will prepare your order. 
+What is missing is the critical link to communicate your order to the kitchen and deliver your food back to your table. That’s where the waiter or API comes in. 
+The waiter is the messenger – or API – that takes your request or order and tells the kitchen – the system – what to do. 
+Then the waiter delivers the response back to you; in this case, it is the food.
+
+The travel service, in this case, interacts with the airline’s API. The API is the interface that, like your helpful waiter, 
+can be asked by that online travel service to get information from the airline’s database to book seats, baggage options, etc.
+">
+</textarea>
+<br><br>
+<button class="sharee" type="button">Save</button>
+<button  class="cancee" type="button" onclick="resetForm('actions_frm'); return false;">Cancel</button>
+
+													<br><br>
+</form>
+
+     
 </div></div>
        <script type="text/javascript">
-   function resetForm(addarticle)
+   function resetForm(actions_frm)
    {
-       var myForm = document.getElementById(addarticle);
+       var myForm = document.getElementById(actions_frm);
 
        for (var i = 0; i < myForm.elements.length; i++)
        {
@@ -78,6 +91,6 @@
            }
        }
    }
-</script>              
+</script>     
 </body>
 </html>

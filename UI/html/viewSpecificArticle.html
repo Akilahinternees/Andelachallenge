@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/styles2.css">
+    
+    <title>Document</title>
+
+</head>
+<body>
+<div id="main">
+        <div id="header">
+<img  class="imag" src="../assets/team.png">
+	<div id="menu">
+
+			<a class="inside" href="index.html"><span class="fa fa-home"></span><b> Home <b> </a>
+	</div>
+</div>
+			<div class="text dashboard">
+                <div class="profile">
+				<a href="profile.html">
+                    <div class="dash">
+                    <p>PROFILE</p></div></a>
+ 
+					<a href="Dashboard.html">
+                    <div class="dash">
+                            
+                            <p><b>DASHBOARD</b></p>      
+                    </div></a>
+					<a href="articles.html">
+                    <div class="dash">
+                            
+                            <p><b>VIEW ARTICLES</b></p>       
+                    </div></a>
+					<a href="userpage.html">
+                    <div class="dash">
+                            
+                            <p><b>ADD ARTICLES</b></p>      
+                    </div></a>
+					<a href="index.html">
+                    <div class="dash">
+                            
+                            <p><b>LOGOUT</b></p>      
+                    </div></a>
+
+                </div>  
+            
+        
+        </div>
+    <div class="entre">
+    <h2 class="title">This Blod post will make you more money guaranted</h2>
+	<form action="" method="post" id="actions_frm">
+<textarea class="textareas" disabled="disabled" placeholder="API is the acronym for Application Programming Interface, which is a software intermediary that allows 
+two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+To explain this better, let us take a familiar example.
+
+Imagine you’re sitting at a table in a restaurant with a menu of choices to order from. The kitchen is the part of the “system” that will prepare your order. 
+What is missing is the critical link to communicate your order to the kitchen and deliver your food back to your table. That’s where the waiter or API comes in. 
+The waiter is the messenger – or API – that takes your request or order and tells the kitchen – the system – what to do. 
+Then the waiter delivers the response back to you; in this case, it is the food.
+
+The travel service, in this case, interacts with the airline’s API. The API is the interface that, like your helpful waiter, 
+can be asked by that online travel service to get information from the airline’s database to book seats, baggage options, etc.
+">
+</textarea>
+<br><br>
+<button class="sharee" type="button" onclick="document.getElementById('id02').style.display='block'">Share</button>
+<a href="edityourarticle.html"><button  class="edit" type="button">Edit</button></a>
+<button  class="cancee" type="button">Delete</button>
+<div id="id02" class="modal">
+						  
+	<div style="width:50%;" class="modal-content animate">
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span><br>
+			<center><h3 class="heading3" style="color:grey"><b>CHOOSE PEOPLE YOU WANT TO SHARE WITH </b></h3><br>
+			<form action="" method="post" enctype="multipart/form-data">
+			<select class="people" required>
+                <option>- select people-</option>
+                <option>Claire</option>
+                <option>Grace</option>
+                <option>Bahati</option>
+                <option>All</option>
+             </select><br><br><br><br>
+			<button type="submit" class="sharee">SHARE</button><br><br>	
+		</form></center>
+	</div></div>
+														
+</div><br>													
+</form>    
+</div></div>
+       <script type="text/javascript">
+   function resetForm(addarticle)
+   {
+       var myForm = document.getElementById(addarticle);
+
+       for (var i = 0; i < myForm.elements.length; i++)
+       {
+           if ('submit' != myForm.elements[i].type && 'reset' != myForm.elements[i].type)
+           {
+               myForm.elements[i].checked = false;
+               myForm.elements[i].value = '';
+               myForm.elements[i].selectedIndex = 0;
+           }
+       }
+   }
+</script>              
+</body>
+</html>
