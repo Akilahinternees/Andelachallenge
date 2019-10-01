@@ -22,11 +22,15 @@ body{background-color:#6E9095;background-repeat:no-repeat;background-size:cover;
 }
 .entre{
 	margin-left:260px;
-	margin-top:-450px
+	margin-top:-500px
 }
 .textareas{
 width:90%;
 height:300px;
+border:solid 1px #6E9095;
+}
+.titletext{
+width:90%;
 border:solid 1px #6E9095;
 }
 
@@ -179,6 +183,26 @@ border-bottom:solid 1px #3C7792;
   
 }
 .sharee:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+	cursor:pointer;
+}
+.edit{
+    background-color:#039FF9;
+	font-family: Montserrat-Bold;
+	font-size: 13px;
+	line-height: 2.7;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100px;
+	
+	justify-content: center;
+	align-items: center;
+
+  
+}
+.edit:hover{
     background-color: #00324e;
     color: #fcfcff;
 	cursor:pointer;

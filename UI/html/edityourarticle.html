@@ -50,9 +50,11 @@
         
         </div>
     <div class="entre">
-    <h2 class="title">This Blod post will make you more money guaranted</h2>
+    <h2 class="title">Edit you article</h2>
 	<form action="" method="post" id="actions_frm">
-<textarea class="textareas" disabled="disabled" placeholder="API is the acronym for Application Programming Interface, which is a software intermediary that allows 
+	<input type="Text" class="titletext" placeholder="This Blod post will make you more money guaranted">
+	<br><br>
+<textarea class="textareas"  placeholder="API is the acronym for Application Programming Interface, which is a software intermediary that allows 
 two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
 To explain this better, let us take a familiar example.
 
@@ -66,40 +68,18 @@ can be asked by that online travel service to get information from the airlineâ€
 ">
 </textarea>
 <br><br>
-<button class="sharee" type="button" onclick="document.getElementById('id02').style.display='block'">Share</button>
-<a href="edityourarticle.html"><button  class="edit" type="button">Edit</button></a>
-<button  class="cancee" type="button">Delete</button>
-<div id="id02" class="modal">
-						  
-												  <div style="width:50%;" class="modal-content animate">
-													<div class="imgcontainer">
-													<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span><br>
-														<center><h3 class="heading3" style="color:grey"><b>CHOOSE PEOPLE YOU WANT TO SHARE WITH </b></h3>
-														<br>
-														<form action="" method="post" enctype="multipart/form-data">
-															<select class="people" required>
-                                                  <option>- select people-</option>
-                                                  <option>Claire</option>
-                                                  <option>Grace</option>
-                                                  <option>Bahati</option>
-                                                  <option>All</option>
-                                                </select><br><br><br><br>
-															
-															<button type="submit" class="sharee">SHARE</button><br><br>	
-														</form></center>
-														</div></div>
-														
+<button class="sharee" type="button">Save</button>
+<button  class="cancee" type="button" onclick="resetForm('actions_frm'); return false;">Cancel</button>
 
-													</div>
-													<br>
+													<br><br>
 </form>
 
      
 </div></div>
        <script type="text/javascript">
-   function resetForm(addarticle)
+   function resetForm(actions_frm)
    {
-       var myForm = document.getElementById(addarticle);
+       var myForm = document.getElementById(actions_frm);
 
        for (var i = 0; i < myForm.elements.length; i++)
        {
@@ -111,6 +91,6 @@ can be asked by that online travel service to get information from the airlineâ€
            }
        }
    }
-</script>              
+</script>     
 </body>
 </html>
