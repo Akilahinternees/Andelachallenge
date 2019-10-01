@@ -67,9 +67,31 @@ can be asked by that online travel service to get information from the airlineâ€
 ">
 </textarea>
 <br><br>
-<button class="sharee" type="button">Share</button>
+<button class="sharee" type="button" onclick="document.getElementById('id02').style.display='block'">Share</button>
 <button  class="cancee" type="button">Delete</button>
-<br><br>
+<div id="id02" class="modal">
+						  
+												  <div style="width:50%;" class="modal-content animate">
+													<div class="imgcontainer">
+													<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span><br>
+														<center><h3 class="heading3" style="color:grey"><b>CHOOSE PEOPLE YOU WANT TO SHARE WITH </b></h3>
+														<br>
+														<form action="" method="post" enctype="multipart/form-data">
+															<select class="people" required>
+                                                  <option>- select people-</option>
+                                                  <option>Claire</option>
+                                                  <option>Grace</option>
+                                                  <option>Bahati</option>
+                                                  <option>All</option>
+                                                </select><br><br><br><br>
+															
+															<button type="submit" class="sharee">SHARE</button><br><br>	
+														</form></center>
+														</div></div>
+														
+
+													</div>
+													<br>
 </form>
 
      
