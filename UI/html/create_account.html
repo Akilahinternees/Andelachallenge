@@ -41,19 +41,10 @@ $(document).ready(function () {
 <center>
 <div id="user-account">
 <table id="table">
-<th class="th">Already have account<br><small>Login here</small></th>
 <th class="th">New Account?<br><small>Create here</small><br><br></th><br><br>
 <tr>
-<td class="firste">
-	<form class="form1" action="userpage.html">
-		<div class="input-icons">
-		  </i><input class="create2" type="text" placeholder="Username" name="username" 	required><br><br>
-		  <i class="fa fa-lock icon" ></i><input class="create2" type="password" placeholder="Enter Password" name="password" required>
-		  </div><br>
-			<input type="submit" class="signupbtn1" name="submitO" value="Login">	
-	</form>
-</td>
 <td class="first">
+<center>
 	<form class="form2" method="post" action="index.html">
 		<div class="input-icons">
 		<i class="fa fa-user icon"></i>
@@ -66,6 +57,33 @@ $(document).ready(function () {
 		  <div class="registrationFormAlert" id="divCheckPasswordMatch" style="text-align:center"></div>
 		   <input type="submit" name="submit" value="Sign up" class="signupbtn">	
 	 </form>
+	 <p id="two">Already have an account<a class="forget" onclick="document.getElementById('id02').style.display='block'" id="signup"><b> Login here</b></a></p>
+	 
+	 <div id="id02" class="modal">
+		<div class="modal-content animate">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span><br>
+						
+				<center>
+				<form action="" method="post">
+				<p class="user"><b><i class="fa fa-user icon"></i>Employee Login</b></p>
+				<div class="input-icons">
+				<i class="fa fa-user icon"></i>
+				<input class="logine" placeholder="Username" type="text" name="username" required><br><br>
+				<i class="fa fa-key icon"></i>
+				<input class="logine" placeholder="Password" type="password" name="password" required><br><br>
+				</div>
+				</form>
+				<a href="userpage.html"><button class="login100-form-btn">Login</button></a>
+				<p id="one">Forgot <a href="#contact" class="forget"><b>Username</b></a> / <a href="#" class="forget"><b>Password?</b></a></p>
+				
+				
+				</center>
+			</div>
+		</div>
+	</div>
+	 </center>
+	 
 </td>
 </tr>
 </table></br></br>

@@ -32,7 +32,7 @@ body{background-color:#6E9095;padding:60px;}
 .image{width:150%;height:480px;}
 .body2{width:40%;margin-left:510px;margin-top:-445px;}
 .user{color:#57b846;font-family:tahoma;text-transform:uppercase;}
-.logine{ background-color:#E9E6E6;border:none;border-radius: 18px;width:36%;
+.logine{ background-color:white;border:1px solid grey;border-radius: 10px;width:36%;
 font-family: Montserrat-Bold;
 	font-size: 18px;
 	line-height: 2.7;
@@ -45,38 +45,38 @@ font-family: Montserrat-Bold;
 	color: #fff;
 	text-transform: uppercase;
 	width: 42%;
-	border-radius: 18px;
+	border-radius: 10px;
 	background: #57b846;
 	justify-content: center;
 	align-items: center;
 	padding: 0 25px;
 
 }
-.forget{text-decoration:none;color:#3DC661}
+.forget{text-decoration:none;color:#3DC661;cursor:pointer;}
 
-.login100-form-btn:hover {background: #333333;}
+.login100-form-btn:hover {background: white;color:#57b846;cursor:pointer;border:1px solid #57b846}
 .input-icons i { position: absolute; } 
         
 .input-icons { width: 100%; margin-bottom: 10px; } 
           
 .icon { padding: 10px; } 
-.create{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:45%;text-align:center}
-.create1{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:90%;text-align:center}
+.create{border:1px solid grey;background-color:white;border-radius:10px;font-size: 15px;line-height: 2.7;width:30%;text-align:center}
+.create1{border:1px solid grey;background-color:white;border-radius:10px;font-size: 15px;line-height: 2.7;width:60%;text-align:center}
 .create2{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:100%;text-align:center}
 .create2{border:none;background-color:#E9E6E6;border-radius:18px;font-size: 15px;line-height: 2.7;width:100%;text-align:center}
 .signupbtn{font-family: Montserrat-Bold;
 	font-size: 13px;
 	line-height: 2.7;
-	border:none;
+	border:1px solid grey;
 	color: #fff;
 	text-transform: uppercase;
-	width: 90%;
-	border-radius: 18px;
+	width: 61%;
+	border-radius: 10px;
 	background: #57b846;
 	justify-content: center;
 	align-items: center;
 	padding: 0 25px;}
-.signupbtn:hover {background: #333333;cursor:pointer}
+.signupbtn:hover {background: white;cursor:pointer;color:#57b846;border:1px solid grey}
 .signupbtn1{font-family: Montserrat-Bold;
 	font-size: 13px;
 	line-height: 2.7;
