@@ -268,23 +268,27 @@ border-radius:5px;
 	
 #look{font-family: Montserrat-Bold;
 	border:none;
+	cursor:pointer;
 	color: #fff;
 	text-transform: uppercase;
 	background: #039FF9;}
 #edit1{font-family: Montserrat-Bold;
 	border:none;
 	color: #fff;
+	cursor:pointer;
 	text-transform: uppercase;
 	background: #57b846;}
 #delete1{font-family: Montserrat-Bold;
 	border:none;
 	color: #fff;
+	cursor:pointer;
 	text-transform: uppercase;
 	background: #F71A6E;}
 
 #share1{font-family: Montserrat-Bold;
 	border:none;
 	color: #fff;
+	cursor:pointer;
 	text-transform: uppercase;
 	background: #F48749;}
 
