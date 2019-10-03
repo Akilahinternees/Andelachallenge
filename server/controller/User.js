@@ -1,4 +1,5 @@
 import validateUser from './validateUser'
+import validateUserLogin from './validationlogin'
 import blog from '../models/db'
 
 class Users {
@@ -28,6 +29,22 @@ class Users {
 
         res.json({'status': 201, 'message': 'user created succesfully','UserIdentification':user });
         
+    }
+
+    login (req, res) {
+        
+        const { error } = validateUserLogin(req.body);
+        
+        if(error) return res.status(400).send(error.details[0].message);
+    
+        let username = req.body.username
+        let password = req.body.password
+
+        let userIndex = blog.users.findIndex((user)  => user.username == username && user.password == password);
+
+        let loggedUser = blog.users[userIndex];
+        
+        res.json({ 'status':200,'message':'successfully logged in','Userinformation': loggedUser.username})
     }
 }
 
