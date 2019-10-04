@@ -44,8 +44,22 @@ describe('/POST Create user', () => {
                     .get('/api/v1/Viewarticles')
                     .end((err, res) => {
                         res.should.have.status(200);
-                        res.body.should.be.an('array');
+                        res.body.should.be.an('object');
                         return true;
+                    });
+            });
+
+            it("should get single articles record", () => {
+                let article = {
+                    'title': 'making money',
+                    'content':'online making money',
+                    'createdOn':'2019-10-04T10:38:33.237Z',
+                }
+                chai.request(app)
+                    .get('/api/v1/ViewSpecificarticle/:id')
+                    .send(article)
+                    .end((err, res) => {
+                       
                     });
             });
         });

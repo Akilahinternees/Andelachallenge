@@ -24,6 +24,12 @@ class Articles {
     getallArticles (req,res){
         res.json({'status':200,'message':'success','data':blog.articles});
     };
+    getoneArticle  (req,res){
+        const article = blog.articles.find(u => u.id === parseInt(req.params.id));
+        if(!article) return res.status(404).send('given id was not found');
+        res.json({'status':200,'message':'success','data':article});
+    };    
+    
      
 }
 
