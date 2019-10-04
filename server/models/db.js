@@ -1,4 +1,13 @@
 const blog = {
+    articles:[
+        {
+            id:1,
+            title: 'Making money online',
+            content: 'There many ways of making money one of them ',
+            createdOn:'2019-10-04T10:38:33.237Z',
+        },
+    
+    ],
     users: [
         {
             id:1,
