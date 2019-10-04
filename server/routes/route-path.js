@@ -13,5 +13,6 @@ router.delete('/api/V1/Deletearticles/:id', Articles.deleteArticle);
 router.put('/api/V1/Updatearticles/:id', Articles.updateArticle);
 router.get('/api/v1/getusers', Users.getallUsers);
 router.get('/api/v1/getOneuser/:id', Users.getOneuser);
+router.post('/api/V1/commentarticles/:id', Articles.commentArticle)
 
 export default router
