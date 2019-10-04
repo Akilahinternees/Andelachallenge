@@ -19,6 +19,22 @@ describe('/POST Create user', () => {
             .end((err, res) => {
 
             });
-        });
+        });    
     });
+
+    describe('/POST Create article', () => {
+        it('Create article Testing', () => {
+            let article = {
+                'title': 'making money',
+                'content':'online making money',
+                'createdOn':'2019-10-04T10:38:33.237Z',
+            }
+            chai.request(app)
+                .post('/api/v1/articles')
+                .send(article)
+                .end((err, res) => {
+    
+                });
+            });
+        });
     
