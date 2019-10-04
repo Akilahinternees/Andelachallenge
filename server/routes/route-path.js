@@ -11,5 +11,7 @@ router.get('/api/v1/Viewarticles', Articles.getallArticles);
 router.get('/api/v1/ViewSpecificarticle/:id', Articles.getoneArticle);
 router.delete('/api/V1/Deletearticles/:id', Articles.deleteArticle);
 router.put('/api/V1/Updatearticles/:id', Articles.updateArticle);
+router.get('/api/v1/getusers', Users.getallUsers);
+router.get('/api/v1/getOneuser/:id', Users.getOneuser);
 
 export default router

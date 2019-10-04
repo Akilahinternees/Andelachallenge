@@ -46,6 +46,16 @@ class Users {
         
         res.json({ 'status':200,'message':'successfully logged in','Userinformation': loggedUser.username})
     }
+
+    getallUsers (req,res){
+        res.json({'status':200,'message':'success','data':blog.users});
+  }
+
+  getOneuser (req,res){
+    const user = blog.users.find(u => u.id === parseInt(req.params.id));
+    if(!user) return res.status(404).send('given id was not found');
+    res.send(user);
+}
 }
 
 export default Users = new Users()
