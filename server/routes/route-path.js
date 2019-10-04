@@ -7,5 +7,6 @@ const router = express();
 router.post('/api/v1/auth/userSignup/', Users.addUser);
 router.post('/api/v1/auth/signin', Users.login);
 router.post('/api/v1/articles', Articles.addArticle);
+router.get('/api/v1/Viewarticles', Articles.getallArticles);
 
 export default router

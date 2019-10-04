@@ -19,8 +19,12 @@ class Articles {
         blog.articles.push(article);
         res.json({'status': 200, 'message': 'Article created succesfully','ArticleIdentification':article,});
         
-    };   
+    };  
+    
+    getallArticles (req,res){
+        res.json({'status':200,'message':'success','data':blog.articles});
+    };
      
 }
 
-export default Articles = new Articles()
+export default Articles = new Articles();
