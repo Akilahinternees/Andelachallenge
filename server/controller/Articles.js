@@ -20,6 +20,17 @@ class Articles {
         res.json({'status': 200, 'message': 'Article created succesfully','ArticleIdentification':article,});
         
     };
+    updateArticle (req,res){
+        const article = blog.articles.find(u => u.id === parseInt(req.params.id));
+        if(!article) return res.status(404).send('given id was not found');
+    
+    const {error}=validateArticle(req.body);
+    if(error) return res.status(400).send(error.details[0].message);
+        article.title=req.body.title;
+        article.content=req.body.content;
+        res.json({'status': 200, 'message': 'Article  succesfully updated ','ArticleIdentification':article,});
+    
+    };
     deleteArticle (req,res){
         const article = blog.articles.find(u => u.id === parseInt(req.params.id));
         if(!article) return res.status(404).send('given id was not found');

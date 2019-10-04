@@ -64,7 +64,7 @@ describe('/POST Create user', () => {
             });
         });
 
-        describe('/DELETE Create article', () => {
+        describe('/DELETE  article', () => {
             it('delete article Testing', () => {
                 let article = {
                     'title': 'making money',
@@ -79,4 +79,19 @@ describe('/POST Create user', () => {
                     });
                 });
             });
+            describe('/Update  article', () => {
+                it('update article Testing', () => {
+                    let article = {
+                        'title': 'making money',
+                        'content':'online making money',
+                        'createdOn':'2019-10-04T10:38:33.237Z',
+                    }
+                    chai.request(app)
+                        .delete('/api/V1/Updatearticles/:id')
+                        .send(article)
+                        .end((err, res) => {
+            
+                        });
+                    });
+                });
     
