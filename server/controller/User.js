@@ -35,7 +35,7 @@ class Users {
         
         const { error } = validateUserLogin(req.body);
         
-        if(error) return res.status(400).send(error.details[0].message);
+        if(error) return res.status(400).json({'status':400,'message':error.details[0].message})
     
         let username = req.body.username
         let password = req.body.password
@@ -53,7 +53,7 @@ class Users {
 
   getOneuser (req,res){
     const user = blog.users.find(u => u.id === parseInt(req.params.id));
-    if(!user) return res.status(404).send('given id was not found');
+    if(!user) return res.status(404).json({'status':404,'message':'given id was not found'});
     res.send(user);
 }
 }
