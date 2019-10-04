@@ -37,4 +37,16 @@ describe('/POST Create user', () => {
                 });
             });
         });
+        describe("GET /api/v1/Viewarticles", () => {
+
+            it("should get all articles record", () => {
+                chai.request(app)
+                    .get('/api/v1/Viewarticles')
+                    .end((err, res) => {
+                        res.should.have.status(200);
+                        res.body.should.be.an('array');
+                        return true;
+                    });
+            });
+        });
     
